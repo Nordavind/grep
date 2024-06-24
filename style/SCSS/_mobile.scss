@@ -26,8 +26,10 @@
   @include wide-section--md(); // layouts/_wide-section.scss
   @include testimonials--md(); // layouts/_wide-section.scss
   @include contact-form--md(); // layouts/_contact-form.scss
+  @include footer--md(); // layouts/_footer.scss
 }
 
 // Small (sm)
 @media screen and (max-width: 576px) {
+  @include footer--sm(); // layouts/_footer.scss
 }

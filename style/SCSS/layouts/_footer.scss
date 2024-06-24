@@ -1,15 +1,70 @@
 .footer-main-bg {
+  border-top: 4px solid $color-a;
   background-color: #14261c;
 }
 
 .footer-grid-container {
   max-width: 1320px;
-  padding: 60px 40px 60px 40px;
+  padding: 80px 40px 60px 40px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 2fr 1fr 1.5fr;
   row-gap: 60px;
   column-gap: 60px;
+
+  h4 {
+    color: white;
+    font-weight: 600;
+    font-family: $font-uno;
+  }
+
+  p {
+    font-size: 0.90rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+  }
+
+  li {
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    font-size: 0.90rem;
+    line-height: 1.3rem;
+    font-weight: 300;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 12px;
+
+    i {
+      font-size: 0.90rem;
+      line-height: 0.90rem;
+      color: $color-a;
+    }
+  }
+
+  a {
+    &.nav-footer-link {
+      font-size: 1rem;
+      line-height: 1rem;
+      font-weight: 500;
+    }
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footer-col-item {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
+.footer-col-subitem {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
 }
 
 .logo-img-footer {
@@ -32,4 +87,74 @@
 
 .social-icon-b {
   font-size: 25px;
+}
+
+.subfooter-main-bg {
+  border-top: 1px solid $color-a;
+}
+
+.subfooter-container {
+  max-width: 1320px;
+  padding: 18px 40px 18px 40px;
+  margin: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  p {
+    font-size: 0.90rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+  }
+
+  span {
+    font-weight: 600;
+  }
+
+  a {
+    font-size: 0.90rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+    transition: all .3s ease;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+// mobile - llamados en _mobile.scss
+@mixin footer--md() {
+  .footer-grid-container {
+    padding: 60px 40px 60px 40px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@mixin footer--sm() {
+  .footer-grid-container {
+    padding: 60px 20px 60px 20px;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+
+    li {
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer-col-subitem {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0px;
+  }
+
+  .subfooter-container {
+    max-width: 1320px;
+    padding: 20px;
+    margin: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    gap: 8px;
+  }
 }
