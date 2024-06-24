@@ -1,0 +1,35 @@
+.footer-main-bg {
+  background-color: #14261c;
+}
+
+.footer-grid-container {
+  max-width: 1320px;
+  padding: 60px 40px 60px 40px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 60px;
+  column-gap: 60px;
+}
+
+.logo-img-footer {
+  width: 110px;
+}
+
+.social-icons-wrapper-footer {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 18px;
+}
+
+.icon-link-footer {
+  transition: all .3s ease;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.social-icon-b {
+  font-size: 25px;
+}

@@ -1,0 +1,46 @@
+.testimonials-grid {
+  width: 100%;
+}
+
+.testimonials-grid-item {
+  width: calc(33.333% - 20px);
+  padding: 30px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background: #fff;
+  border: 1px solid #f2f3ff;
+  border-radius: 15px;
+  box-shadow: 0 20px 30px -15px rgba(29, 1, 80, .1);
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  i {
+    font-size: 27px;
+    line-height: 27px;
+    color: $color-a;
+  }
+}
+
+.testimonial-name {
+  padding-top: 12px;
+
+  p {
+    padding-top: 5px;
+  }
+}
+
+// mobile - llamados en _mobile.scss
+@mixin testimonials--md() {
+  .testimonials-grid-item {
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+}

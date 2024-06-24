@@ -1,0 +1,45 @@
+// titulo de 1 columna
+.title-one-col-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+}
+
+// titulo de 2 columnas
+.title-two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  align-items: center;
+
+  h2 , h3 {
+    text-align: right;
+  }
+}
+
+.title-two-col-item {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+
+// mobile - llamados en _mobile.scss
+@mixin titles--md() {
+  .title-two-col-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 40px;
+    align-items: center;
+  
+    h2 , h3, h4 {
+      text-align: center;
+    }
+  }
+}

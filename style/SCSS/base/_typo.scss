@@ -1,0 +1,170 @@
+// typo
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Sora:wght@100..800&display=swap');
+
+// variables Fuentes
+
+$font-uno: 'Lexend', sans-serif;
+$font-dos: 'Sora', sans-serif;
+
+// encabezados
+
+h1 {
+  font-family: $font-dos;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: $color-font;
+
+  &.h1-hero-title {
+    color: white;
+  }
+}
+
+
+h2 {
+  font-family: $font-dos;
+  font-size: 2.6rem;
+  line-height: 2.6rem;
+  font-weight: 600;
+  color: $color-font;
+
+  &.h2-white {
+    color: white;
+    font-weight: 600;
+  }
+
+  &.h2-two-lines {
+    line-height: 3rem;
+  }
+
+  &.h2-form-title {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+}
+
+h3 {
+  font-family: $font-dos;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  font-weight: 500;
+
+  &.h3-primary {
+    color: $color-a;
+  }
+
+  &.h3-hero-subtitle {
+    color: $color-a;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+  }
+}
+
+h4 {
+  font-family: $font-dos;
+  font-size: 1.0rem;
+  line-height: 1.0rem;
+  font-weight: 400;
+
+  &.h4-white {
+    color: white;
+  }
+
+  &.h4-primary {
+    color: $color-a;
+  }
+
+  &.h4-two-lines {
+    line-height: 1.6rem;
+  }
+
+  &.h4-bold {
+    font-weight: 600;
+  }
+}
+
+// textos
+p {
+  font-family: $font-dos;
+  font-size: 0.95rem;
+  line-height: 1.6rem;
+  font-weight: 300;
+
+  &.p-hero-text {
+    color: $color-a;
+    font-family: $font-dos;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    font-weight: 200;
+  }
+
+  &.p-bold {
+    font-weight: 500;
+  }
+
+  &.p-white {
+    color: white;
+  }
+
+  &.p-primary {
+    color: $color-a;
+  }
+}
+
+// links
+a {
+  text-decoration: none;
+  color: $color-a;
+  transition: all 0.3s ease;
+
+  &.h3-link {
+    color: $color-font;
+
+    &:hover {
+      color: $color-a;
+    }
+  }
+
+  &.img-link {
+    line-height: 0;
+    overflow: hidden;
+    border-radius: 0 0 15px 0;
+  }
+}
+
+span {
+
+  &.span-red {
+    color: red;
+  }
+}
+
+// mobile - llamados en _mobile.scss
+@mixin typo--lg() {
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+  
+    &.h3-hero-subtitle {
+      font-size: 1.5rem;
+      line-height: 1.5rem;
+    }
+  }
+
+  h4 {
+    font-size: 1.0rem;
+    line-height: 1.3rem;
+  
+    &.h4-two-lines {
+      line-height: 1.6rem;
+    }
+  }
+}
+
+@mixin typo--md() {
+  h1 {
+    font-size: 3.8rem;
+  }
+}

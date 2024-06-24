@@ -1,0 +1,106 @@
+// Basic
+html,
+body {
+  font-family: $font-dos;
+  //background-color: $color-dark-a;
+  //scroll-behavior: smooth; apagado por problemas en mobile en conjunto a js de navbar
+}
+
+::selection {
+  //color: $color-wht;
+  //background: $color-primary;
+}
+
+::-moz-selection {
+  //color: $color-wht;
+  //background: $color-primary;
+}
+
+// scrollbar
+// ::-webkit-scrollbar {
+//   width: 10px;
+// }
+
+// ::-webkit-scrollbar-track {
+//   background: #f2f3ff; //#4b346c;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//   background: #b3b5cb; //#7753ab
+// }
+
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #30c7b5; //#b750b9
+// }
+
+// contenedores utilitarios (1240px width base + 80 padding)
+.base-container {
+  max-width: 1320px;
+  padding: 0 40px 0px 40px;
+  margin: auto;
+}
+
+.base-container-rel {
+  max-width: 1320px;
+  padding: 0 40px 0px 40px;
+  margin: auto;
+}
+
+.gray-container {
+  max-width: 100%;
+  background-color: #f3f6f3;
+}
+
+// separador global
+.separator-updn {
+  margin: 80px 0px;
+}
+
+.separator-dn {
+  margin-bottom: 80px;
+}
+
+.separator-dn-spec {
+  margin-bottom: 120px;
+}
+
+.title-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+
+.hide-temp {
+  display: none;
+}
+
+// mobile - llamados en _mobile.scss
+@mixin basic--lg() {
+  .base-container {
+    padding: 0 30px 0px 30px;
+  }
+
+  .base-container-rel {
+    padding: 0 30px 0px 30px;
+  }
+
+  .separator-dn-spec {
+    margin-bottom: 80px;
+  }
+}
+
+@mixin basic--md() {
+  .separator-updn {
+    margin: 60px 0px;
+  }
+  
+  .separator-dn {
+    margin-bottom: 60px;
+  }
+
+  .separator-dn-spec {
+    margin-bottom: 60px;
+  }
+}
+
+

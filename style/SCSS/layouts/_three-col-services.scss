@@ -1,0 +1,47 @@
+.three-col-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 60px;
+  column-gap: 60px;
+}
+
+.three-col-card {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  align-items: left;
+}
+
+.three-col-card-content {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.tree-col-img {
+  max-width: 100%;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+// mobile - llamados en _mobile.scss
+@mixin three-col-services--lg() {
+  .three-col-services-grid {
+    row-gap: 40px;
+    column-gap: 40px;
+  }
+}
+
+@mixin three-col-services--md() {
+  .three-col-services-grid {
+    padding-top: 40px;
+
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 50px;
+    column-gap: 40px;
+  }
+}

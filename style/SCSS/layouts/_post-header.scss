@@ -1,0 +1,119 @@
+.post-header-container {
+  position: relative;
+  top: -90px;
+  max-width: 1320px;
+  padding: 0 40px 0px 40px;
+  margin: auto;
+}
+
+.post-header-wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.post-header-left {
+  max-width: 50%;
+  padding: 50px;
+  background-image: linear-gradient(130deg, #4db6ac 0%, #263238 55%);
+  border-radius: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  gap: 25px;
+}
+
+.post-header-right-grid {
+  width: 50%;
+  border-radius: 0 15px 15px 0;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);;
+  gap: 0px;
+  padding: 0px;
+}
+
+.post-header-right-item {
+  height: 240px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.post-header-right-item:nth-child(1) {
+  border: 1px solid #e1e1e1;
+  border-left: none;
+}
+
+.post-header-right-item:nth-child(2) {
+  border-radius: 0 15px 0 0;
+  border: 1px solid #e1e1e1;
+  border-left: none;
+}
+
+.post-header-right-item:nth-child(3) {
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  border-left: none;
+}
+
+.post-header-right-item:nth-child(4) {
+  border-radius: 0 0 15px 0;
+  border: 1px solid #e1e1e1;
+  border-top: none;
+  border-left: none;
+}
+
+.counter-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+// mobile - llamados en _mobile.scss
+@mixin post-header--lg() {
+  .post-header-container {
+    top: -50px;
+    padding: 0 30px 0px 30px;
+  }
+}
+
+@mixin post-header--md() {
+  .post-header-container {
+    top: 0px;
+  }
+
+  .post-header-wrapper {
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .post-header-left {
+    max-width: 100%;
+    padding: 40px;
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .post-header-right-grid {
+    width: 100%;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .post-header-right-item {
+    height: 180px;
+  }
+
+  .post-header-right-item:nth-child(1) {
+    border-left: 1px solid #e1e1e1;
+    border-radius: 15px 0 0 0;
+  }
+  
+  .post-header-right-item:nth-child(3) {
+    border-left: 1px solid #e1e1e1;
+    border-radius: 0 0 0 15px;
+  }
+}

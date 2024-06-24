@@ -1,0 +1,239 @@
+.contact-main-wrapper {
+  max-width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  top: -60px;
+}
+
+// formulario
+.contact-wrapper {
+  width: 45%;
+  border-radius: 15px;
+  background: url("../img/form-bg.webp") no-repeat center center / cover;
+}
+
+.contact-inner-wrapper {
+  border-radius: 15px;
+  padding: 45px;
+  background-color: rgba(20, 38, 28, 0.9);
+
+  h2 {
+    color: white;
+  }
+
+  p {
+    color: white;
+    font-weight: 200;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  label {
+    font-size: 0.95rem;
+    line-height: 0.95rem;
+    font-weight: 200;
+    color: white;
+  }
+
+  input[type="text"],
+  textarea {
+    font-size: 0.90rem;
+    line-height: 1.2rem;
+    font-family: $font-dos;
+    font-weight: 300;
+    color: $color-font;
+    background-color: white; //#fafafa
+    padding: 10px;
+    border: 2px solid rgba(20, 38, 28, 0.9);
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.363);
+    transition: all .3s ease;
+  }
+
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: $color-a;
+    outline: none;
+  }
+}
+
+.contact-form-title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 30px;
+}
+
+.field-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkbox-main-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.form-button {
+  font-family: $font-uno;
+  font-size: 1rem;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  padding: 17px 45px;
+  border-radius: 8px;
+  background-color: $color-a;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $color-a;
+    background-color: white;
+  }
+}
+
+// faq
+.faq-wrapper {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.faq-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+// acordeon faq
+.acordeon-wrapper {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.acordion-item {
+  height: 80px;
+  background-color: white;
+  cursor: pointer;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  box-sizing: border-box;
+  border: 1px solid #e1e1e1;
+  transition: all 0.3s ease;
+
+  & + .panel {
+    margin-top: -1px;
+  }
+
+  span {
+    font-family: $font-dos;
+    color: $color-font;
+    font-size: 0.90rem;
+    line-height: 1.3rem;
+    font-weight: 500;
+  }
+}
+
+.acordion-active, .acordion-item:hover {
+  background-color: $color-a;
+}
+
+.panel {
+  max-height: 0;
+  overflow: hidden;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.panel-content {
+  padding: 20px 20px 35px 20px;
+
+  p {
+    font-family: $font-uno;
+    color: $color-font;
+    font-size: 0.90rem;
+    line-height: 1.6rem;
+    font-weight: 300;
+  }
+}
+
+// mobile - llamados en _mobile.scss
+@mixin contact-form--lg() {
+  .contact-main-wrapper {
+    gap: 40px;
+    top: -50px;
+  }
+
+  .contact-wrapper {
+    width: 55%;
+  }
+
+  .contact-inner-wrapper {
+    padding: 40px;
+  }
+
+  .faq-wrapper {
+    width: 45%;
+  }
+
+  .acordion-item {
+    height: auto;
+    padding: 20px 20px 20px 20px;
+  }
+}
+
+@mixin contact-form--md() {
+  .contact-main-wrapper {
+    padding: 60px 0 60px 0;
+    flex-flow: column nowrap;
+    gap: 60px;
+    top: 0px;
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    order: 2;
+  }
+
+  .faq-wrapper {
+    width: 100%;
+    order: 1;
+  }
+
+  .faq-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
+    h2 {
+      text-align: center;
+    }
+
+    h3 {
+      text-align: center;
+    }
+  }
+}

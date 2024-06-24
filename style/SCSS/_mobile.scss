@@ -1,0 +1,33 @@
+// Special (client carousel)
+@media screen and (max-width: 700px) {
+  @include client-carousel--special(); // components/_clients-carousel.scss
+}
+
+// Large (lg)
+@media screen and (max-width: 992px) {
+  @include typo--lg(); // base/_typo.scss
+  @include basic--lg(); // base/_basic.scss
+  @include header--lg(); // layouts/_header.scss
+  @include post-header--lg(); // layouts/_post-header.scss
+  @include post-header--lg(); // layouts/_post-header.scss
+  @include three-col-services--lg(); // layouts/_three-col-services.scss
+  @include wide-section--lg(); // layouts/_wide-section.scss
+  @include contact-form--lg(); // layouts/_contact-form.scss
+}
+
+// Medium (md)
+@media screen and (max-width: 768px) {
+  @include typo--md(); // base/_typo.scss
+  @include basic--md(); // base/_basic.scss
+  @include titles--md(); // components/_titles.scss
+  @include header--md(); // layouts/_header.scss
+  @include post-header--md(); // layouts/_post-header.scss
+  @include three-col-services--md(); // layouts/_three-ol-services.scss
+  @include wide-section--md(); // layouts/_wide-section.scss
+  @include testimonials--md(); // layouts/_wide-section.scss
+  @include contact-form--md(); // layouts/_contact-form.scss
+}
+
+// Small (sm)
+@media screen and (max-width: 576px) {
+}

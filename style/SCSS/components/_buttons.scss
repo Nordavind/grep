@@ -1,0 +1,57 @@
+%button-base {
+  font-family: $font-uno;
+  display: inline-block;
+  padding: 17px 45px;
+  border-radius: 8px;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 0.3px;
+  font-weight: 300;
+  //text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.button-a {
+  @extend %button-base;
+  font-weight: 400;
+  color: $color-font;
+  background-color: $color-a;
+
+  &:hover {
+    color: $color-a;
+    background-color: white;
+  }
+}
+
+.button-b {
+  @extend %button-base;
+  font-weight: 400;
+  color: white;
+  background-color: $color-a;
+
+  &:hover {
+    color: $color-a;
+    background-color: white;
+  }
+}
+
+.button-ghost-w {
+  @extend %button-base;
+  padding: 15px 45px;
+  font-weight: 400;
+  color: white;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+
+  &:hover {
+    color: $color-a;
+    background-color: white;
+  }
+}
+
+.button-fix-margin {
+  margin-top: 10px;
+}
