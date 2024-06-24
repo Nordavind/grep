@@ -222,7 +222,7 @@
   transition: all .3s ease-in-out;
 
   &.open {
-    height: 380px;
+    height: 410px;
     padding: 40px 0;
     border-bottom: 2px solid $color-a;
   }
@@ -231,13 +231,7 @@
     margin-left: 20px;
     display: flex;
     flex-flow: column nowrap;
-    gap: 30px;
-  }
-
-  li {
-    //height: 20px;
-    // padding-left: 20px;
-    // margin-bottom: 10px;
+    gap: 35px;
   }
 
   a {
@@ -245,7 +239,11 @@
     color: $color-a;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: 300;
+    font-weight: 400;
+
+    &.active {
+      color: white;
+    }
   }
 }
 
