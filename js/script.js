@@ -10,6 +10,24 @@ document.addEventListener("DOMContentLoaded", function () {
   videoContainer.insertBefore(video, videoContainer.firstChild);
 });
 
+// navbar mobile fixed luego de scroll
+document.addEventListener('DOMContentLoaded', () => {
+  const navbar = document.querySelector('.nav-bar-wrapper-mobile');
+  const heroMainBg = document.querySelector('.hero-main-bg');
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (!entry.isIntersecting) {
+              navbar.classList.add('fixed');
+          } else {
+              navbar.classList.remove('fixed');
+          }
+      });
+  }, { threshold: 0 });
+
+  observer.observe(heroMainBg);
+});
+
 // counter post-header
 new PureCounter({
   selector: '.counter-casos',

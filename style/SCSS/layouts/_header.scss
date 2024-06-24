@@ -186,6 +186,11 @@
   position: absolute;
   z-index: 2;
   width: 100%;
+
+  &.fixed {
+    position: fixed;
+    background-color: #12231a;
+  }
 }
 
 .hamb-link {
@@ -211,7 +216,7 @@
 
 .nav-mob-deploy {
   position: absolute;
-  z-index: 2; // actualmente sobre todos los elementos
+  z-index: 2;
   background-color: #12231a;
   width: 100%;
   position: absolute;
@@ -222,7 +227,7 @@
   transition: all .3s ease-in-out;
 
   &.open {
-    height: 410px;
+    height: 420px;
     padding: 40px 0;
     border-bottom: 2px solid $color-a;
   }
