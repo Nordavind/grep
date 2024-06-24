@@ -103,4 +103,13 @@ body {
   }
 }
 
+@mixin basic--sm() {
+  .base-container {
+    padding: 0 20px 0px 20px;
+  }
+
+  .base-container-rel {
+    padding: 0 20px 0px 20px;
+  }
+}
 

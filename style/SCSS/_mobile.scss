@@ -22,7 +22,7 @@
   @include titles--md(); // components/_titles.scss
   @include header--md(); // layouts/_header.scss
   @include post-header--md(); // layouts/_post-header.scss
-  @include three-col-services--md(); // layouts/_three-ol-services.scss
+  @include three-col-services--md(); // layouts/_three-col-services.scss
   @include wide-section--md(); // layouts/_wide-section.scss
   @include testimonials--md(); // layouts/_wide-section.scss
   @include contact-form--md(); // layouts/_contact-form.scss
@@ -31,5 +31,10 @@
 
 // Small (sm)
 @media screen and (max-width: 576px) {
+  @include typo--sm(); // base/_typo.scss
+  @include basic--sm(); // base/_basic.scss
+  @include header--sm(); // layouts/_header.scss
+  @include post-header--sm(); // layouts/_post-header.scss
+  @include three-col-services--sm(); // layouts/_three-col-services.scss
   @include footer--sm(); // layouts/_footer.scss
 }

@@ -234,3 +234,28 @@
     padding-bottom: 100px;
   }
 }
+
+@mixin header--sm() {
+  .hero-main-bg {
+    padding-bottom: 90px;
+  }
+
+  .hero-main-bg video {
+    height: 900px;
+  }
+
+  .hero-container {
+    padding: 0 20px 0px 20px;
+  }
+
+  .hero-content {
+    max-width: 90%;
+    padding-top: 90px;
+  }
+
+  .hero-buttons-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+  }
+}

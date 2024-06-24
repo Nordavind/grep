@@ -142,6 +142,10 @@
     }
   }
 
+  .footer-col-item:nth-child(1) {
+    margin-bottom: 16px;
+  }
+
   .footer-col-subitem {
     display: flex;
     flex-flow: column nowrap;
