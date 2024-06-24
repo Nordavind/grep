@@ -180,6 +180,75 @@
   align-items: center;
 }
 
+// navbar mobile
+.nav-bar-wrapper-mobile {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+
+.hamb-link {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-a;
+  background-color: rgba(255, 255, 255, 0);
+  transition: all .3s ease-in-out;
+  border: none;
+
+  i {
+    font-size: 20px;
+    color: white;
+  }
+
+  &.active {
+    background-color: $color-a;
+  }
+}
+
+.nav-mob-deploy {
+  position: absolute;
+  z-index: 2; // actualmente sobre todos los elementos
+  background-color: #12231a;
+  width: 100%;
+  position: absolute;
+  right: 0px;
+  top: 86px;
+  height: 0;
+  overflow: hidden;
+  transition: all .3s ease-in-out;
+
+  &.open {
+    height: 380px;
+    padding: 40px 0;
+    border-bottom: 2px solid $color-a;
+  }
+
+  ul {
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+  }
+
+  li {
+    //height: 20px;
+    // padding-left: 20px;
+    // margin-bottom: 10px;
+  }
+
+  a {
+    font-family: $font-dos;
+    color: $color-a;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+
 // mobile - llamados en _mobile.scss
 @mixin header--lg() {
   .hero-main-bg {
@@ -191,8 +260,12 @@
     padding: 17px 30px 17px 30px;
   }
 
-  .nav-bar-row-b {
+  .nav-bar-wrapper-desktop {
     display: none;
+  }
+
+  .nav-bar-wrapper-mobile {
+    display: block;
   }
 
   .hero-container {
@@ -205,7 +278,7 @@
 
   .hero-content {
     max-width: 80%;
-    padding-top: 100px;
+    padding-top: 190px;
 
     h1 {
       text-align: center;
@@ -233,6 +306,10 @@
   .hero-main-bg {
     padding-bottom: 100px;
   }
+
+  .hero-content {
+    padding-top: 180px;
+  }
 }
 
 @mixin header--sm() {
@@ -244,13 +321,17 @@
     height: 900px;
   }
 
+  .nav-bar-row-subwrapper {
+    padding: 17px 20px 17px 20px;
+  }
+
   .hero-container {
     padding: 0 20px 0px 20px;
   }
 
   .hero-content {
     max-width: 90%;
-    padding-top: 90px;
+    padding-top: 165px;
   }
 
   .hero-buttons-wrapper {

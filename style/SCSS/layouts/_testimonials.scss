@@ -44,3 +44,12 @@
     margin-left: 10px;
   }
 }
+
+@mixin testimonials--sm() {
+  .testimonials-grid-item {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}

@@ -36,5 +36,8 @@
   @include header--sm(); // layouts/_header.scss
   @include post-header--sm(); // layouts/_post-header.scss
   @include three-col-services--sm(); // layouts/_three-col-services.scss
+  @include wide-section--sm(); // layouts/_wide-section.scss
+  @include testimonials--sm(); // layouts/_wide-section.scss
+  @include contact-form--sm(); // layouts/_contact-form.scss
   @include footer--sm(); // layouts/_footer.scss
 }

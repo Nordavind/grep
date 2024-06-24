@@ -237,3 +237,9 @@
     }
   }
 }
+
+@mixin contact-form--sm() {
+  .contact-inner-wrapper {
+    padding: 40px 30px;
+  }
+}

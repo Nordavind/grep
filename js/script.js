@@ -80,13 +80,9 @@ function getDirection() {
 
 // carousel script (swiper)
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  // direction: 'horizontal', // direction: 'horizontal',
   direction: getDirection(),
   loop: true,
   allowTouchMove: false,
-
-  // Number of slides to show
   slidesPerView: 4,
   slidesPerGroup: 4,
 
@@ -113,16 +109,13 @@ const swiper = new Swiper('.swiper', {
     },
   },
 
-  // Transition speed (in milliseconds)
-  speed: 800, // Ajusta la velocidad según tus necesidades
+  speed: 800,
 
-  // Autoplay settings
   autoplay: {
-    delay: 2000, // Tiempo entre transiciones en milisegundos
-    disableOnInteraction: false, // No pausa el autoplay al interactuar con el slider
+    delay: 2000,
+    disableOnInteraction: false,
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.custom-next-button',
     prevEl: '.custom-prev-button',

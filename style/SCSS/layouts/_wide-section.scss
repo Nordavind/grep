@@ -82,4 +82,10 @@
   }
 }
 
+@mixin wide-section--sm() {
+  .wide-section-content-wrapper {
+    width: 90%;
+  }
+}
+
 
