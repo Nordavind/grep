@@ -26,11 +26,12 @@
   <script defer src="./js/script.js"></script>
 </head>
 
-<body class="home">
+<body>
   <div class="nav-bar-wrapper-mobile">
     <div class="nav-bar-row-a">
       <div class="nav-bar-row-subwrapper">
-        <a class="header-logo-wrapper" href="./index.html"><img class="header-logo-img" src="./img/logo-grep-w.svg" alt="logo grep"></a>
+        <a class="header-logo-wrapper" href="./index.html"><img class="header-logo-img" src="./img/logo-grep-w.svg"
+            alt="logo grep"></a>
         <button class="hamb-link" onclick="toggleNavBar(this)">
           <i class="fa-solid fa-bars"></i>
         </button>
@@ -39,11 +40,10 @@
       <nav id="navbarMobDeploy" class="nav-mob-deploy">
         <ul>
           <li><a class="active" href="./index.html">Inicio</a></li>
-          <li><a href="./nosotros.html">Quienes somos</a></li>
-          <li><a href="./terminal.html">Partners Grep</a></li>
-          <li><a href="./tecnologia.html">Servicios</a></li>
-          <li><a href="./servicios.html">Trabaja en Grep</a></li>
-          <li><a href="./clientes.html">Clientes</a></li>
+          <li><a href="./quienes-somos.html">Quiénes somos</a></li>
+          <li><a href="./partners.html">Partners Grep</a></li>
+          <li><a href="./servicios.html">Servicios</a></li>
+          <li><a href="./trabaja-en-grep.html">Trabaja en Grep</a></li>
           <li><a href="./contacto.html">Contáctanos</a></li>
         </ul>
       </nav>
@@ -57,31 +57,36 @@
               alt="logo grep"></a>
           <p>Llámanos: <a href="tel:+56232394615">+562 3239 4615</a> </p>
           <div class="social-icons-wrapper">
-            <a class="icon-link" href="#"><i class="social-icon-a fa-brands fa-linkedin"></i></a>
-            <a class="icon-link" href="#"><i class="social-icon-a fa-brands fa-instagram"></i></a>
-            <a class="icon-link" href="#"><i class="social-icon-a fa-brands fa-whatsapp"></i></a>
+            <a class="icon-link" href="https://www.linkedin.com/company/grep-ti/"><i
+                class="social-icon-a fa-brands fa-linkedin"></i></a>
+            <a class="icon-link" href="https://www.instagram.com/somosgrep/"><i
+                class="social-icon-a fa-brands fa-instagram"></i></a>
+            <a class="icon-link"
+              href="https://api.whatsapp.com/send?phone=56959152101&text=Estoy%20interesado(a)%20en%20contratar%20uno%20de%20sus%20servicios%20que%20vi%20en%20la%20web%20www.grel.cl"><i
+                class="social-icon-a fa-brands fa-whatsapp"></i></a>
           </div>
         </div>
       </div>
       <div class="nav-bar-row-b">
         <ul class="nav-list">
-          <li class="nav-list-item"><a class="nav-list-link" href="#">Quienes Somos</a></li>
-          <li class="nav-list-item"><a class="nav-list-link" href="#">Partners Grep</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="./quienes-somos.html">Quiénes Somos</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="./partners.html">Partners Grep</a></li>
           <li class="nav-list-item dropdown">
-            <a class="nav-list-link" href="#">Servicios<i class="chevron-down-ico fa-solid fa-chevron-down"></i></a>
+            <a class="nav-list-link" href="./servicios.html">Servicios<i
+                class="chevron-down-ico fa-solid fa-chevron-down"></i></a>
             <div class="dropdown-content">
-              <a href="#">Auditoría TI</a>
-              <a href="#">Cableado Esructurado</a>
-              <a href="#">Outsourcing TI</a>
-              <a href="#">Redes Inalámbricas Wi-Fi</a>
-              <a href="#">Soporte TI</a>
-              <a href="#">Seguridad TI</a>
+              <a href="./servicios/auditoria-ti.html">Auditoría TI</a>
+              <a href="./servicios/cableado-estructurado.html">Cableado Esructurado</a>
+              <a href="./servicios/outsourcing-ti.html">Outsourcing TI</a>
+              <a href="./servicios/redes-inalambricas.html">Redes Inalámbricas Wi-Fi</a>
+              <a href="./servicios/soporte-ti.html">Soporte TI</a>
+              <a href="./servicios/ciber-seguridad-ti.html">Seguridad TI</a>
             </div>
           </li>
-          <li class="nav-list-item"><a class="nav-list-link" href="#">Trabaja en Grep</a></li>
-          <li class="nav-list-item"><a class="nav-list-link" href="#">Contáctanos</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="./trabaja-en-grep.html">Trabaja en Grep</a></li>
+          <li class="nav-list-item"><a class="nav-list-link" href="./contacto.html">Contáctanos</a></li>
         </ul>
-        <a class="button-a" href="">Agendar</a>
+        <a class="button-a" href="./contacto.html">Agendar</a>
       </div>
     </div>
     <div class="hero-container">
@@ -93,8 +98,8 @@
         <p class="p-hero-text">Nos enfocamos en las alianzas con nuestros clientes para brindar servicios sobresalientes
           y la mejora continua de sus productos y procesos.</p>
         <div class="hero-buttons-wrapper">
-          <a class="button-b" href="#">Hablemos</a>
-          <a class="button-ghost-w" href="#">Contáctanos</a>
+          <a class="button-b" href="tel:+56232394615">Llámanos</a>
+          <a class="button-ghost-w" href="./contacto.html">Contáctanos</a>
         </div>
       </div>
     </div>
@@ -112,7 +117,7 @@
             abierto.</a></p>
         <p class="p-white p-bold">Somos <a href="https://es.wikipedia.org/wiki/Agnosticismo">agnósticos</a> a las marcas
           o proveedores lo que nos permite elegir el que mejor se ajusta a las necesidades de cada cliente.</p>
-        <a class="button-b button-fix-margin" href="#">Trabajemos</a>
+        <a class="button-b button-fix-margin" href="./contacto.html">Trabajemos</a>
       </div>
       <div class="post-header-right-grid">
         <div class="post-header-right-item">
@@ -150,10 +155,10 @@
     <div class="three-col-services-grid">
       <!-- Auditoría TI -->
       <div class="three-col-card">
-        <a class="img-link" href="#"><img class="tree-col-img" src="https://placehold.co/600x400@2x.png"
-            alt="Auditoria TI"></a>
+        <a class="img-link" href="./servicios/auditoria-ti.html"><img class="tree-col-img"
+            src="https://placehold.co/600x400@2x.png" alt="Auditoria TI"></a>
         <div class="three-col-card-content">
-          <a class="h3-link" href="#">
+          <a class="h3-link" href="./servicios/auditoria-ti.html">
             <h3>Auditoría TI</h3>
           </a>
           <p>Hacemos un levantamiento de la situación actual seguida de un diagnóstico y proponemos iniciativas de
@@ -163,10 +168,10 @@
       </div>
       <!-- Cableado Estructurado -->
       <div class="three-col-card">
-        <a class="img-link" href="#"><img class="tree-col-img" src="https://placehold.co/600x400@2x.png"
-            alt="Cableado Estructurado"></a>
+        <a class="img-link" href="./servicios/cableado-estructurado.html"><img class="tree-col-img"
+            src="https://placehold.co/600x400@2x.png" alt="Cableado Estructurado"></a>
         <div class="three-col-card-content">
-          <a class="h3-link" href="#">
+          <a class="h3-link" href="./servicios/cableado-estructurado.html">
             <h3>Cableado Estructurado</h3>
           </a>
           <p>Implementamos puntos certificados de acuerdo a los estándares internacionales, instalamos las terminaciones
@@ -175,10 +180,10 @@
       </div>
       <!-- Ciberseguridad TI -->
       <div class="three-col-card">
-        <a class="img-link" href="#"><img class="tree-col-img" src="https://placehold.co/600x400@2x.png"
-            alt="Ciberseguridad TI"></a>
+        <a class="img-link" href="./servicios/ciber-seguridad-ti.html"><img class="tree-col-img"
+            src="https://placehold.co/600x400@2x.png" alt="Ciberseguridad TI"></a>
         <div class="three-col-card-content">
-          <a class="h3-link" href="#">
+          <a class="h3-link" href="./servicios/ciber-seguridad-ti.html">
             <h3>Ciberseguridad TI</h3>
           </a>
           <p>Servicio seguridad informática para empresas, hacemos un análisis profundo de la seguridad abordando
@@ -187,10 +192,10 @@
       </div>
       <!-- Outsourcing TI -->
       <div class="three-col-card">
-        <a class="img-link" href="#"><img class="tree-col-img" src="https://placehold.co/600x400@2x.png"
-            alt="Outsourcing TI"></a>
+        <a class="img-link" href="./servicios/outsourcing-ti.html"><img class="tree-col-img"
+            src="https://placehold.co/600x400@2x.png" alt="Outsourcing TI"></a>
         <div class="three-col-card-content">
-          <a class="h3-link" href="#">
+          <a class="h3-link" href="./servicios/outsourcing-ti.html">
             <h3>Outsourcing TI</h3>
           </a>
           <p>Con nuestro servicio outsourcing TI para empresas nos encargamos del recurso más importante de tu negocio:
@@ -199,10 +204,10 @@
       </div>
       <!-- Redes Inalámbricas Wi-Fi -->
       <div class="three-col-card">
-        <a class="img-link" href="#"><img class="tree-col-img" src="https://placehold.co/600x400@2x.png"
-            alt="Redes Inalámbricas Wi-Fi"></a>
+        <a class="img-link" href="./servicios/redes-inalambricas.html"><img class="tree-col-img"
+            src="https://placehold.co/600x400@2x.png" alt="Redes Inalámbricas Wi-Fi"></a>
         <div class="three-col-card-content">
-          <a class="h3-link" href="#">
+          <a class="h3-link" href="./servicios/redes-inalambricas.html">
             <h3>Redes Inalámbricas Wi-Fi</h3>
           </a>
           <p>Contamos con los profesionales de redes informáticas y Wi-Fi con mayor expertise en la región. Realizamos
@@ -211,10 +216,10 @@
       </div>
       <!-- Soporte TI -->
       <div class="three-col-card">
-        <a class="img-link" href="#"><img class="tree-col-img" src="https://placehold.co/600x400@2x.png"
-            alt="Soporte TI"></a>
+        <a class="img-link" href="./servicios/soporte-ti.html"><img class="tree-col-img"
+            src="https://placehold.co/600x400@2x.png" alt="Soporte TI"></a>
         <div class="three-col-card-content">
-          <a class="h3-link" href="#">
+          <a class="h3-link" href="./servicios/soporte-ti.html">
             <h3>Soporte TI</h3>
           </a>
           <p>Estructuramos un servicio de soporte técnico informático para empresas de primera calidad. En primer lugar
@@ -234,7 +239,7 @@
             <p class="p-white">Nuestra misión es entregar un servicio de soporte informático para empresas a la medida y
               de la más alta calidad.</p>
           </div>
-          <a class="button-a button-fix-margin" href="#">Agenda Aquí</a>
+          <a class="button-a button-fix-margin" href="./contacto.html">Agenda Aquí</a>
         </div>
       </div>
     </div>
@@ -511,21 +516,30 @@
                 y sus necesidades?</span></button>
             <div class="panel">
               <div class="panel-content">
-                <p>Por supuesto, tenemos servicios ajustados a las necesidades y tamaño de casi toda empresa, desde bolsas de soporte personalizadas, hasta asignación permanente de soporte recurrente mensual, ¿Qué esperas? llena el formulario de contacto o llámanos para recibir una asesoría al respecto.</p>
+                <p>Por supuesto, tenemos servicios ajustados a las necesidades y tamaño de casi toda empresa, desde
+                  bolsas de soporte personalizadas, hasta asignación permanente de soporte recurrente mensual, ¿Qué
+                  esperas? llena el formulario de contacto o llámanos para recibir una asesoría al respecto.</p>
               </div>
             </div>
             <button class="acordion-item"><span>2. ¿Cuento con un soporte remoto así me encuentre de viajes de negocios
                 en el extranjero o en faena por regiones?</span></button>
             <div class="panel">
               <div class="panel-content">
-                <p>Claro que sí, siempre y cuando dispongamos de una coordinación de ambas partes ajustando los tiempos podemos atentarle de manera remota, contamos con un equipo de profesionales especializados en diferentes áreas de soporte microinformático, redes y comunicaciones, asistencia a software, y mucho más, si tienes más dudas no pierdas tiempo y contáctanos para recibir una asesoría gratuita de como podemos ayudarte a ser mas productivo en tu negocio.</p>
+                <p>Claro que sí, siempre y cuando dispongamos de una coordinación de ambas partes ajustando los tiempos
+                  podemos atentarle de manera remota, contamos con un equipo de profesionales especializados en
+                  diferentes áreas de soporte microinformático, redes y comunicaciones, asistencia a software, y mucho
+                  más, si tienes más dudas no pierdas tiempo y contáctanos para recibir una asesoría gratuita de como
+                  podemos ayudarte a ser mas productivo en tu negocio.</p>
               </div>
             </div>
             <button class="acordion-item"><span>3. ¿En cuanto tiempo puedo comenzar a recibir el servicio por el cual mi
                 empresa busca optimizar la productividad?</span></button>
             <div class="panel panel-last">
               <div class="panel-content">
-                <p>Justo desde el momento que aceptes la propuesta de servicios, podrás contar con un equipo de profesionales enfocados en resolver la menor incidencia ocurrida enmarcada en los términos de prestación del servicio acordados entre ambas partes, recuerda concretar todas las dudas al respecto sobre esos términos con nuestra área comercial de negocios.</p>
+                <p>Justo desde el momento que aceptes la propuesta de servicios, podrás contar con un equipo de
+                  profesionales enfocados en resolver la menor incidencia ocurrida enmarcada en los términos de
+                  prestación del servicio acordados entre ambas partes, recuerda concretar todas las dudas al respecto
+                  sobre esos términos con nuestra área comercial de negocios.</p>
               </div>
             </div>
           </div>
@@ -536,33 +550,39 @@
   <div class="footer-main-bg">
     <div class="footer-grid-container">
       <div class="footer-col-item">
-        <a class="footer-logo-wrapper" href="./index.html"><img class="logo-img-footer" src="./img/logo-grep-w.svg" alt="logo grep"></a>
+        <a class="footer-logo-wrapper" href="./index.html"><img class="logo-img-footer" src="./img/logo-grep-w.svg"
+            alt="logo grep"></a>
         <p class="p-white">Somos un grupo de ingenieros apasionados por la tecnología que buscamos entregar soluciones a
           la medida de cada negocio. Podemos implementar soluciones corporativas de grandes marcas, tecnologías más
           innovadoras en la nube o <a href="https://es.wikipedia.org/wiki/C%C3%B3digo_abierto">soluciones de código
             abierto.</a></p>
         <div class="social-icons-wrapper-footer">
-          <a class="icon-link-footer" href="#"><i class="social-icon-b fa-brands fa-linkedin"></i></a>
-          <a class="icon-link-footer" href="#"><i class="social-icon-b fa-brands fa-instagram"></i></a>
-          <a class="icon-link-footer" href="#"><i class="social-icon-b fa-brands fa-whatsapp"></i></a>
+          <a class="icon-link-footer" href="https://www.linkedin.com/company/grep-ti/"><i
+              class="social-icon-b fa-brands fa-linkedin"></i></a>
+          <a class="icon-link-footer" href="https://www.instagram.com/somosgrep/"><i
+              class="social-icon-b fa-brands fa-instagram"></i></a>
+          <a class="icon-link-footer"
+            href="https://api.whatsapp.com/send?phone=56959152101&text=Estoy%20interesado(a)%20en%20contratar%20uno%20de%20sus%20servicios%20que%20vi%20en%20la%20web%20www.grel.cl"><i
+              class="social-icon-b fa-brands fa-whatsapp"></i></a>
         </div>
       </div>
       <div class="footer-col-item">
         <h4>Navegación</h4>
         <ul>
-          <li><a class="nav-footer-link" href="#">Inicio</a></li>
-          <li><a class="nav-footer-link" href="#">Quienes Somos</a></li>
-          <li><a class="nav-footer-link" href="#">Partners Grep</a></li>
-          <li><a class="nav-footer-link" href="#">Servicios</a></li>
-          <li><a class="nav-footer-link" href="#">Trabaja en Grep</a></li>
-          <li><a class="nav-footer-link" href="#">Contáctanos</a></li>
+          <li><a class="nav-footer-link" href="./index.html">Inicio</a></li>
+          <li><a class="nav-footer-link" href="./quienes-somos.html">Quiénes Somos</a></li>
+          <li><a class="nav-footer-link" href="./partners.html">Partners Grep</a></li>
+          <li><a class="nav-footer-link" href="./servicios.html">Servicios</a></li>
+          <li><a class="nav-footer-link" href="./trabaja-en-grep.html">Trabaja en Grep</a></li>
+          <li><a class="nav-footer-link" href="./contacto.html">Contáctanos</a></li>
         </ul>
       </div>
       <div class="footer-col-item">
         <h4>Información</h4>
         <div class="footer-col-subitem">
           <ul>
-            <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.app.goo.gl/q7LzLLrk74u7gDJ29">Bernardo O'Higgins 4050, Piso 16, Ofic. 1618, Est. Central</a></li>
+            <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.app.goo.gl/q7LzLLrk74u7gDJ29">Bernardo
+                O'Higgins 4050, Piso 16, Ofic. 1618, Est. Central</a></li>
           </ul>
           <ul>
             <li><i class="fa-solid fa-phone"></i><a href="tel:+56232394615">+562 3239 4615</a></li>
@@ -578,9 +598,10 @@
     <div class="subfooter-main-bg">
       <div class="subfooter-container">
         <p class="p-white"><span>©2024 Grep</span> - Todos los derechos reservados </p>
-        <a href="#">Política de Privacidad</a>
+        <a href="./politica-de-privacidad.html">Política de Privacidad</a>
       </div>
     </div>
   </div>
 </body>
+
 </html>

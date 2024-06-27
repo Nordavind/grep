@@ -16,13 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
   const heroMainBg = document.querySelector('.hero-main-bg');
 
   const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-          if (!entry.isIntersecting) {
-              navbar.classList.add('fixed');
-          } else {
-              navbar.classList.remove('fixed');
-          }
-      });
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        navbar.classList.add('prefixed');
+        setTimeout(() => {
+          navbar.classList.add('fixed');
+          navbar.classList.add('show');
+        }, 300);
+
+      } else {
+        navbar.classList.remove('show');
+        setTimeout(() => {
+          navbar.classList.remove('fixed');
+          navbar.classList.remove('prefixed');
+        }, 300);
+      }
+    });
   }, { threshold: 0 });
 
   observer.observe(heroMainBg);
@@ -141,12 +150,12 @@ const swiper = new Swiper('.swiper', {
 });
 
 // evento que escucha la ventana para actualizar estado de la funcion getdirection
-window.addEventListener('resize', function() {
+window.addEventListener('resize', function () {
   swiper.changeDirection(getDirection());
 });
 
 // masonryjs
-window.onload = function() {
+window.onload = function () {
   const elem = document.querySelector('.testimonials-grid');
   const msnry = new Masonry(elem, {
     itemSelector: '.testimonials-grid-item',
@@ -156,7 +165,7 @@ window.onload = function() {
 };
 
 // acordeones
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   // abre el primer acordeon por defecto
   const firstAccordion = document.querySelector(".acordion-item.acordion-active");
   const firstPanel = firstAccordion.nextElementSibling;
@@ -165,10 +174,10 @@ document.addEventListener("DOMContentLoaded", function() {
   // agrega listeners a todos los acordeones
   const accordions = document.getElementsByClassName("acordion-item");
   for (let i = 0; i < accordions.length; i++) {
-    accordions[i].addEventListener("click", function() {
+    accordions[i].addEventListener("click", function () {
       // cerrar todos los paneles abiertos
       const activeAccordions = document.querySelectorAll(".acordion-item.acordion-active");
-      activeAccordions.forEach(function(item) {
+      activeAccordions.forEach(function (item) {
         item.classList.remove("acordion-active");
         const panel = item.nextElementSibling;
         if (panel) {
