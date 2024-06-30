@@ -1,14 +1,14 @@
-// hero video-playback background
-document.addEventListener("DOMContentLoaded", function () {
-  const videoContainer = document.querySelector('.hero-main-bg')
-  const video = document.createElement('video');
-  video.autoplay = true;
-  video.muted = true;
-  video.loop = true;
-  video.src = './img/video-bg-1.mp4';
-  video.type = 'video/mp4';
-  videoContainer.insertBefore(video, videoContainer.firstChild);
-});
+// // hero video-playback background
+// document.addEventListener("DOMContentLoaded", function () {
+//   const videoContainer = document.querySelector('.hero-main-bg')
+//   const video = document.createElement('video');
+//   video.autoplay = true;
+//   video.muted = true;
+//   video.loop = true;
+//   video.src = './img/video-bg-1.mp4';
+//   video.type = 'video/mp4';
+//   videoContainer.insertBefore(video, videoContainer.firstChild);
+// });
 
 // navbar mobile fixed luego de scroll
 document.addEventListener('DOMContentLoaded', () => {
