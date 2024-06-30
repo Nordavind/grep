@@ -112,6 +112,10 @@
   &:hover {
     transform: scale(1.1);
   }
+
+  &.active {
+    color: white;
+  }
 }
 
 // dropdown navbar
@@ -222,7 +226,7 @@
   transition: all .3s ease-in-out;
 
   &.open {
-    height: 360px;
+    height: 440px;
     padding: 40px 0;
     border-bottom: 2px solid $color-a;
   }
@@ -236,7 +240,7 @@
 
   a {
     font-family: $font-dos;
-    color: $color-a;
+    //color: $color-a;
     text-decoration: none;
     font-size: 1rem;
     font-weight: 400;
