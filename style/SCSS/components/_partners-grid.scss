@@ -1,0 +1,53 @@
+.partners-grid {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 60px;
+  column-gap: 60px;
+
+  img {
+    max-width: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
+
+// mobile - llamados en _mobile.scss
+@mixin partners-grid--lg() {
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 60px;
+    column-gap: 60px;
+
+    img {
+      max-width: 100%;
+      filter: none;
+      transition: filter 0.3s ease;
+  
+      &:hover {
+        filter: none;
+      }
+    }
+  }
+}
+
+@mixin partners-grid--md() {
+  .partners-grid {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 40px;
+    column-gap: 40px;
+  }
+}
+
+@mixin partners-grid--sm() {
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+  }
+}
+

@@ -7,8 +7,8 @@
 @media screen and (max-width: 992px) {
   @include typo--lg(); // base/_typo.scss
   @include basic--lg(); // base/_basic.scss
+  @include partners-grid--lg(); // components/_partners-grid.scss
   @include header--lg(); // layouts/_header.scss
-  @include post-header--lg(); // layouts/_post-header.scss
   @include post-header--lg(); // layouts/_post-header.scss
   @include three-col-services--lg(); // layouts/_three-col-services.scss
   @include wide-section--lg(); // layouts/_wide-section.scss
@@ -20,6 +20,7 @@
   @include typo--md(); // base/_typo.scss
   @include basic--md(); // base/_basic.scss
   @include titles--md(); // components/_titles.scss
+  @include partners-grid--md(); // components/_partners-grid.scss
   @include header--md(); // layouts/_header.scss
   @include post-header--md(); // layouts/_post-header.scss
   @include three-col-services--md(); // layouts/_three-col-services.scss
@@ -33,6 +34,7 @@
 @media screen and (max-width: 576px) {
   @include typo--sm(); // base/_typo.scss
   @include basic--sm(); // base/_basic.scss
+  @include partners-grid--sm(); // components/_partners-grid.scss
   @include header--sm(); // layouts/_header.scss
   @include post-header--sm(); // layouts/_post-header.scss
   @include three-col-services--sm(); // layouts/_three-col-services.scss
